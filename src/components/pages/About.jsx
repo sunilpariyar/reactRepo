@@ -1,9 +1,31 @@
 import React, { Component } from 'react';
 
 class Aboutpage extends Component {
-    render() {
+    renderDiv(i) {
+        return <Division value={i} />;
+    }
+    render(){
         return(
-            <h1>This is about page</h1>
+            <div className="home-container">
+                {this.renderDiv(
+                    <div>
+                        <h4>This is my about page</h4>
+                    
+                    </div>
+                )}
+                {this.renderDiv(
+                    <h3>Welcome to my web profile</h3>)}
+                
+            </div>
+        );
+    }
+}
+class Division extends Component{
+    render(){
+        return(
+            <div className="mydiv">
+                {this.props.value}
+            </div>
         );
     }
 }
