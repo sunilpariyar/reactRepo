@@ -18,9 +18,19 @@ class Homepage extends Component {
                     </div>
                 )}
                 {this.renderDiv(
-                    <h3>Welcome to my web profile</h3>)}
+                    <div style={{backgroundColor:"purple"}}>
+                        
+                            <ul>
+                                <a href="https://www.facebook.com/pariyar?ref=bookmarks">facebook</a>
+                                <a>Linkedin</a>
+                            </ul>
+                        
+                    </div>
+                    )}                  
+                
                 
             </div>
+            
         );
     }
 }

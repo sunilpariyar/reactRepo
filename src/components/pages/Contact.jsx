@@ -1,32 +1,21 @@
 import React, { Component } from 'react';
 
 class Contactpage extends Component {
-    renderDiv(i) {
-        return <Division value={i} />;
-    }
     render(){
         return(
-            <div className="home-container">
-                {this.renderDiv(
-                    <div>
-                        <h4>Hello, this is my contact page</h4>
-                    
-                    </div>
-                )}
-                {this.renderDiv(
-                    <h3>Welcome to my web profile</h3>)}
-                
+            <div className="home-container" style={{width:"100%", display:'flex'}}>
+                <div style={{width:"50%"}} >
+                    I am always interested in things that change the world or will change the world. Always ready to accept challenges which I think is the best way to learn new things. Never hesitate to say no for things which I don't know and never take my step back when I get a chance to learn new technologies
+                </div>
+                <div style={{width:"50%"}}>
+                    I am always interested in things that change the world or will change the world. Always ready to accept challenges which I think is the best way to learn new things. Never hesitate to say no for things which I don't know and never take my step back when I get a chance to learn new technologies
+                </div>
+                <div style={{width:"50%"}}>
+                    I am always interested in things that change the world or will change the world. Always ready to accept challenges which I think is the best way to learn new things. Never hesitate to say no for things which I don't know and never take my step back when I get a chance to learn new technologies
+                </div>
             </div>
         );
     }
 }
-class Division extends Component{
-    render(){
-        return(
-            <div className="mydiv">
-                {this.props.value}
-            </div>
-        );
-    }
-}
+
 export default Contactpage;

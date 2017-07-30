@@ -6,16 +6,18 @@ class Aboutpage extends Component {
     }
     render(){
         return(
-            <div className="home-container">
+            <div className="home-container" style={{display:'flex'}}>
                 {this.renderDiv(
                     <div>
-                        <h4>This is my about page</h4>
-                    
+                        <h4>This is my about page</h4>                    
                     </div>
                 )}
-                {this.renderDiv(
-                    <h3>Welcome to my web profile</h3>)}
                 
+                {this.renderDiv(
+                    <div>
+                        <h4>Welcome to my web profile</h4>
+                    </div>
+                )}                
             </div>
         );
     }

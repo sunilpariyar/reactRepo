@@ -11,11 +11,12 @@ class App extends Component {
   render() {
     return (
       <Router>  
-        <div className="App" style={{backgroundImage: `url(${Galaxy})`}}>
+        <div className="App"  style={{background: `url(${Galaxy})`,
+         backgroundAttachment:"fixed", backgroundPosition:"center", flex:1,height:null, width:null}}>
           <Navbar />
-          <Route />
-          <Myfooter /> 
-        </div>        
+          <Route />  
+          <Myfooter />
+        </div>  
       </Router>
     );
   }
