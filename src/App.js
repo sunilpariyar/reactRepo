@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
-import Galaxy from './components/Galaxy.jpg';
+// import Galaxy from './components/Galaxy.jpg';
 import Navbar from './components/navbar/Navbar';
 import Route from './components/route/Route';
 import Myfooter from './components/footer/Footer';
@@ -11,8 +11,7 @@ class App extends Component {
   render() {
     return (
       <Router>  
-        <div className="App"  style={{background: `url(${Galaxy})`,
-         backgroundAttachment:"fixed", backgroundPosition:"center", flex:1,height:null, width:null}}>
+        <div className="App-main"  >
           <Navbar />
           <Route />  
           <Myfooter />

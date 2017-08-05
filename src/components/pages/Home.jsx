@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import profilePic from '../profilePic.png';
-import '/home/pariyar/projects/react/myapp/src/App.css';
-
+import fb from '../fb.png';
+import linkedIn from '../linkedIn.png';
 
 class Homepage extends Component {
     renderDiv(i) {
@@ -18,11 +18,15 @@ class Homepage extends Component {
                     </div>
                 )}
                 {this.renderDiv(
-                    <div style={{backgroundColor:"purple"}}>
+                    <div style={{backgroundColor:"#515a86"}}>
                         
                             <ul>
-                                <a href="https://www.facebook.com/pariyar?ref=bookmarks">facebook</a>
-                                <a>Linkedin</a>
+                                <a href="https://www.facebook.com/pariyar?ref=bookmarks">
+                                    <img src={fb} style={{height:"30px", padding:"2px"}}/>
+                                </a>
+                                <a>
+                                    <img src={linkedIn} style={{height:"30px", padding:"2px", border:"black"}}/>
+                                </a>
                             </ul>
                         
                     </div>
