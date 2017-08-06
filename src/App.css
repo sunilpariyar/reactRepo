@@ -36,11 +36,11 @@
   font-size: 24px;
   font-weight: bold;
   font-family: monospace;
-  line-height: 34px;
+  /*line-height: 34px;
   height: 100;
   margin-right: 10px;
   margin-top: 10px;
-  margin-left: 10px;
+  margin-left: 10px;*/
   padding: 0;
   text-align: center;
   width: 100;
@@ -53,7 +53,7 @@
   /*float: left;*/
   font-size: 24px;
   font-weight: bold;
-  line-height: 34px;
+  /*line-height: 34px;*/
   height: 100%;
   margin-right: 10px;
   margin-top: 10px;
@@ -61,7 +61,7 @@
   padding: 0;
   text-align: center;
   width: 100%;
-  /*animation: home-page;*/
+  animation: home-page;
   animation-duration: 2s;
 }
 
@@ -71,5 +71,13 @@
 
 .my-footer{
   color: white;
-  margin-top: 35vh;
+}
+
+.fb-li{
+  animation: fb-animation;
+  animation-duration: 4s;
+}
+
+@keyframes fb-animation{
+  0% {margin-right: 1000px}
 }

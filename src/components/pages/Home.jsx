@@ -14,13 +14,23 @@ class Homepage extends Component {
                 {this.renderDiv(
                     <div>
                         <img src={profilePic} alt="myphoto" height="150" width="130" />
-                        <h4>Hi there! <br />This is me Sunil Pariyar</h4>
+                        <h4>Hi there! <br />This is me <a style={{color:"#127167"}}>Sunil Pariyar</a></h4>
+                        
+                        <p style={{fontSize:"13"}}>
+                            Recent graduate from <strong style={{fontSize:"16", color:"#f2c22e"}}>Federation University</strong>.
+                            <br/>
+                            Intern at <strong style={{fontSize:"16",color:"#127167"}}>Outcome.life</strong>
+                            <br/>
+                            <br/>
+                            <hr/>
+                            <br/>
+                            <br/>
+                        </p>
                     </div>
                 )}
                 {this.renderDiv(
-                    <div style={{backgroundColor:"black"}}>
-                        <ol>
-                            
+                    <div className="fb-li" style={{marginRight:"25px"}}>
+                        <ol>                            
                             <a href="https://www.facebook.com/pariyar?ref=bookmarks">
                                 <img src={fb} style={{ padding: "2px", height: "40" }} />
                             </a>
